@@ -4,8 +4,11 @@ public class Dog {
 
     public String eyeColor;
     public int weight;
+    private String privateValue; // darauf kann nur in der Klasse 'Dog' zugegriffen werden
 
     public void doSomething(){
+        privateValue = "PRIVATE";
+        System.out.println(privateValue); // funktioniert in Beagle auch, da es hier bereits initialisiert wurde
         System.out.println("This is a dog!");
     }
 
