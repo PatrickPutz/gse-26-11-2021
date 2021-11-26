@@ -26,9 +26,11 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        return "at.campus02.putz.customer.Customer{" +
-                "CustomerNumber=" + customerNumber +
-                ", Addresses=" + addresses +
+        return "Customer{" +
+                "customerNumber=" + customerNumber +
+                ", addresses=" + addresses +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 '}';
     }
 }
