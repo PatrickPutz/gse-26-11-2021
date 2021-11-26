@@ -7,7 +7,8 @@ public class Customer extends Person {
     private int customerNumber;
     private ArrayList<Address> addresses;
 
-    public Customer(int customerNumber) {
+    public Customer(int customerNumber, String firstname, String lastname) {
+        super(firstname, lastname);
         this.customerNumber = customerNumber;
         addresses = new ArrayList<Address>();
     }
