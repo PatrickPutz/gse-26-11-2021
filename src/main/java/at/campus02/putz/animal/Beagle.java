@@ -9,6 +9,12 @@ public class Beagle extends Dog {
     }
 
     @Override
+    public void bark() {
+        // super.bark(); // super ruft die methode der basisklasse auf
+        System.out.println("This beagle sounds like: wau wau");
+    }
+
+    @Override
     public String toString() {
         return "Beagle{" +
                 "lovedFood='" + lovedFood + '\'' +

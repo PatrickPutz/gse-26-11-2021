@@ -12,6 +12,10 @@ public class Dog {
         System.out.println("This is a dog!");
     }
 
+    public void bark(){
+        System.out.println("This dog sounds like: wuff wuff");
+    }
+
     public String toString() {
         return "Dog{" +
                 "eyeColor='" + eyeColor + '\'' +

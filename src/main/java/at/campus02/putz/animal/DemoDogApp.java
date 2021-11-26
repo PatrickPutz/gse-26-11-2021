@@ -19,5 +19,7 @@ public class DemoDogApp {
         b.doSomething();
         b.doSomething2();
 
+        d.bark();
+        b.bark();
     }
 }
