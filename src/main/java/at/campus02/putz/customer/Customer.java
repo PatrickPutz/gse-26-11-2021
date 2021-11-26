@@ -2,7 +2,7 @@ package at.campus02.putz.customer;
 
 import java.util.ArrayList;
 
-public class Customer {
+public class Customer extends Person {
 
     private int customerNumber;
     private ArrayList<Address> addresses;
