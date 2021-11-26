@@ -1,3 +1,5 @@
+package at.campus02.putz.customer;
+
 import java.util.ArrayList;
 
 public class Customer {
@@ -24,7 +26,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "at.campus02.putz.customer.Customer{" +
                 "CustomerNumber=" + customerNumber +
                 ", Addresses=" + addresses +
                 '}';

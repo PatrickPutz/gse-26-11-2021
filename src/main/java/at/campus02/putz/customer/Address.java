@@ -1,3 +1,5 @@
+package at.campus02.putz.customer;
+
 public class Address {
 
     private String street;
@@ -46,7 +48,7 @@ public class Address {
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "at.campus02.putz.customer.Address{" +
                 "Street='" + street + '\'' +
                 ", Zip='" + zip + '\'' +
                 ", City='" + city + '\'' +

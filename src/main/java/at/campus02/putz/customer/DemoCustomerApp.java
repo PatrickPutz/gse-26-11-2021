@@ -1,4 +1,6 @@
-public class Demo {
+package at.campus02.putz.customer;
+
+public class DemoCustomerApp {
 
     public static void main(String[] args) {
 
