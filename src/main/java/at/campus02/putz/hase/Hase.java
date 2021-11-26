@@ -2,7 +2,7 @@ package at.campus02.putz.hase;
 
 public class Hase {
 
-    private String name;
+    protected String name;
 
     public Hase(String name) {
         this.name = name;
