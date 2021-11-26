@@ -7,11 +7,11 @@ public class DemoCustomerApp {
         Customer Putzi = new Customer(1);
         Customer Leo = new Customer(2);
 
-        Putzi.firstname = "Patrick";
-        Putzi.lastname = "Putz";
+        Putzi.setFirstname("Patrick");
+        Putzi.setLastname("Putz");
 
-        Leo.firstname = "Leo";
-        Leo.lastname = "Tanner";
+        Leo.setFirstname("Leo");
+        Leo.setLastname("Tanner");
 
         Putzi.addAddress(new Address("Weizerstrasse 1", "8010", "Graz", "Austria"));
         Leo.addAddress(new Address("Bachgasse 7a", "8020", "Graz", "Austria"));
