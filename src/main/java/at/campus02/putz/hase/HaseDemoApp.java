@@ -27,6 +27,33 @@ public class HaseDemoApp {
         Rudi.fressen();
         Rudi.verteilen();
 
+        System.out.println("------------------");
+
+        // Up-Casting
+        Hase wh = Olaf;
+        Hase wh2 = new Weihnachtshase("Christkind", 999);
+
+        wh2.fressen();
+        wh2.verteilen();
+        wh2.verteilen();
+
+        Hase oh = new Osterhase("Osterhase");
+
+        oh.fressen();
+        oh.verteilen();
+        // oh.bemaleOstereier(); -> existiert nicht, kann nur auf Methoden zugreifen,
+        // die auch beim Hasen existieren. Überschriebene Methoden werden jedoch immer
+        // von der konkreteren Klasse genommen
+
+        System.out.println("------------------");
+
+        // Down-Casting
+        Osterhase osterHase = (Osterhase) oh;
+        osterHase.bemaleOstereier();
+
+        // Osterhase wh2AlsOsterhase = (Osterhase) wh2; -> kann nicht in einen Osterhasen gecastet werden, da er ein Weihnachtshase ist.
+        // wh2AlsOsterhase.bemaleOstereier();
+
     }
 
 }
