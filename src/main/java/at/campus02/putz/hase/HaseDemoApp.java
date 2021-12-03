@@ -1,5 +1,7 @@
 package at.campus02.putz.hase;
 
+import java.util.ArrayList;
+
 public class HaseDemoApp {
 
     public static void main(String[] args) {
@@ -51,8 +53,21 @@ public class HaseDemoApp {
         Osterhase osterHase = (Osterhase) oh;
         osterHase.bemaleOstereier();
 
-        // Osterhase wh2AlsOsterhase = (Osterhase) wh2; -> kann nicht in einen Osterhasen gecastet werden, da er ein Weihnachtshase ist.
-        // wh2AlsOsterhase.bemaleOstereier();
+        // Osterhase wh2AlsOsterhase = (Osterhase) wh2; -> kann nicht in einen Osterhasen gecastet werden, da er ein Weihnachtshase ist
+        // wh2AlsOsterhase.bemaleOstereier(); -> ClassCastException
+
+        System.out.println("------------------");
+
+        // Liste mit Hasen-Objekten, funktioniert durch Up-Casting
+        ArrayList<Hase> stall = new ArrayList<>();
+        stall.add(Gunter);
+        stall.add(Olaf);
+        stall.add(Rudi);
+
+        for (Hase h : stall) {
+            h.fressen();
+            h.verteilen();
+        }
 
     }
 
