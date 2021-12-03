@@ -5,7 +5,7 @@ public class HaseDemoApp {
     public static void main(String[] args) {
 
         Hase Gunter = new Hase("Gunter");
-        Weihnachtshase Olaf = new Weihnachtshase("Olaf");
+        Weihnachtshase Olaf = new Weihnachtshase("Olaf", 9999);
         Osterhase Rudi = new Osterhase("Rudi");
 
         Gunter.schlafen();
